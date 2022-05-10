@@ -94,12 +94,16 @@ footer {
     #social img {
         padding: 5px;
         max-width: 30px;
-    }    
+    }
+    
+    #container {
+        display: flex;
+    }
 
     main {
         background-color: white;
         width: 80%;
-        float: right;
+        order: 1;
     }
 
     main img {
@@ -110,14 +114,11 @@ footer {
     
     aside {
         width: 20%;
-        float: right;
         padding-right: 10px;
     }    
 
     footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        border-top: thin solid #5F5F5F;
+        padding: 10px 0px 10px 0px;
     }
 }
