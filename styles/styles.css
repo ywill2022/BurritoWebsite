@@ -1,87 +1,73 @@
 * {
-    box-sizing: border-box;
-}
-header > h1, header > h2 {
-    padding-left: 20px;
+    box-sizing: content-box;
+    margin: 0;
 }
 
-nav {
-    text-align: center;
+h1, h2, h3, p, ul {
+    margin-left: 20px;    
+}
+
+h1, h2, h3, p {
+    padding: 10px 0;
+}
+
+aside {
+    padding-bottom: 50px;
 }
 
 .tab {
-    display: block;
-    width: 100%;
+    text-align: center;
+    background-color: lightgrey;
 }
 
 #left {
-    background-color: #EEEEEE;
-}
-
-#centre {
     background-color: #35669B;
-    color: white;
 }
 
-#right {
-    background-color: #EEEEEE;
+.tab:hover, #left:hover {
+    background-color: #7B9CC8;
 }
 
 #social {
     background-color: #A0BBCD;
-    display: block;
     border-top: medium solid #35669B;
     border-bottom: thin solid #35669B;
-}
-
-#social-icons {
-    margin: 0 20px 0 20px;
+    text-align: center;
 }
 
 #social img {
     max-width: 5%;
-    height: auto;
-}
-
-main {
-    background-color: #BFE3A2;
-}
-
-main img {
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-aside {
-    background-color: #BFE3A2;
+    margin: 0 5px;
 }
 
 main, aside {
-    padding: 10px 0px 5px 20px
+    background-color: #BFE3A2;    
+}
+
+#img-box {
+    margin: 0 20px;
+}
+
+main img {
+    object-fit: contain;
+    width: 100%;
 }
 
 footer {
     border-top: thin solid #5F5F5F;
-    padding: 10px 0px 10px 0px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 767px) {
     nav {
         display: flex;
         flex-direction: row;
-        width: 50%;
-    }
-
-    #left {
+        width: 555px;
         margin-left: 20px;
     }
 
-    #right {
-        background-color: #7B9CC8;
-        color: white;
+    .tab {
+        width: 185px;
+        margin-right: 2px;
     }
 
     #social {
@@ -92,11 +78,11 @@ footer {
     }
 
     #social img {
-        padding: 5px;
+        margin: 5px;
         max-width: 30px;
-    }
-    
-    #container {
+    }    
+
+    #main {
         display: flex;
     }
 
@@ -106,10 +92,14 @@ footer {
         order: 1;
     }
 
+    #img-box {
+        margin-left: 20px;
+        max-width: 600px;
+    }
+
     main img {
-        max-width: 100%;
-        height: auto;
-        margin-left: 0px;
+        object-fit: contain;
+        width: 100%;
     }
     
     aside {
